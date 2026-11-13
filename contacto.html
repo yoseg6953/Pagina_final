@@ -1,0 +1,149 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Bienestar en equilibrio</title>
+    <link rel="stylesheet" href="estilos.css">
+
+    <style>
+        .contacto-item img {
+            width: 65px;
+            height: 65px;
+            min-width: 65px;
+            padding: 15px;
+            box-sizing: border-box;
+            object-fit: contain;
+            background-color: #F9E1E8;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo-titulo">
+            <img src="logoo.png" alt="Logo" class="logo">
+
+            <div class="texto-logo">
+                <h2>Bienestar en equilibrio</h2>
+                <p>CUERPO Y MENTE, UNA MISMA ESENCIA</p>
+            </div>
+        </div>
+
+        <nav>
+            <a href="index.html">Inicio</a>
+
+            <details class="menu-fisico">
+                <summary>Físico</summary>
+                <div class="desplegable-contenido">
+                    <a href="fisico.html">General físico</a>
+                    <a href="ejercicio.html">Ejercicio</a>
+                    <a href="alimentacion.html">Alimentación</a>
+                    <a href="descanso.html">Descanso</a>
+                    <a href="hidratacion.html">Hidratación</a>
+                    <a href="postura.html">Postura</a>
+                </div>
+            </details>
+
+            <a href="mental.html">Emocional</a>
+
+            <details class="menu-lineas">
+                <summary>Líneas del tiempo</summary>
+                <div class="desplegable-contenido">
+                    <a href="bienestarfisico.html">Bienestar físico</a>
+                    <a href="bienestarmental.html">Bienestar mental</a>
+                </div>
+            </details>
+
+            <details class="menu-actividades">
+                <summary>Actividades</summary>
+                <div class="desplegable-contenido">
+                    <a href="actividadesfisicas.html">Físico</a>
+                    <a href="actividadesemocionales.html">Emocional</a>
+                </div>
+            </details>
+
+            <a href="contacto.html">Contacto</a>
+        </nav>
+    </header>
+
+    <section class="portada">
+        <h1>Contacto</h1>
+        <p>¿Tienes alguna duda, sugerencia o quieres más información? Estamos aquí para atenderte.</p>
+    </section>
+
+    <main>
+        <div class="seccion-contacto">
+
+            <section class="formulario-contacto">
+                <h2 style="color: #B87589; margin-bottom: 20px; font-weight: 600;">Envíanos un mensaje</h2>
+
+                <form action="#" method="post">
+                    <input type="text" name="nombre" placeholder="Nombre completo *" required>
+
+                    <input type="email" name="correo" placeholder="Correo electrónico *" required>
+
+                    <select name="tema" required>
+                        <option value="">Selecciona el tema de tu mensaje *</option>
+                        <option value="bienestar fisico">Bienestar físico</option>
+                        <option value="bienestar emocional">Bienestar emocional</option>
+                        <option value="sugerencia">Sugerencia</option>
+                        <option value="otro">Otro tema</option>
+                    </select>
+
+                    <textarea name="mensaje" rows="5" placeholder="Escribe tu mensaje detallado aquí... *" required></textarea>
+
+                    <button type="submit" class="boton" style="width: 100%;">Enviar mensaje</button>
+                </form>
+            </section>
+
+            <section class="info-contacto">
+                <h2 style="color: #B87589; margin-bottom: 20px; font-weight: 600;">Información de Soporte</h2>
+
+                <div class="contacto-item">
+                    <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png"
+                         alt="Icono de correo electrónico"
+                         style="filter: brightness(0) saturate(100%) invert(63%) sepia(19%) saturate(1000%) hue-rotate(290deg) brightness(95%) contrast(90%);">
+
+                    <div>
+                        <h3 style="font-size: 15px; color: #B87589; margin-bottom: 4px;">Correo electrónico</h3>
+                        <p style="font-size: 14px; color: #5A4349;">salud24@gmail.com</p>
+                    </div>
+                </div>
+
+                <div class="contacto-item">
+                    <img src="https://cdn-icons-png.flaticon.com/512/684/684908.png"
+                         alt="Icono de ubicación"
+                         style="filter: brightness(0) saturate(100%) invert(63%) sepia(19%) saturate(1000%) hue-rotate(290deg) brightness(95%) contrast(90%);">
+
+                    <div>
+                        <h3 style="font-size: 15px; color: #B87589; margin-bottom: 4px;">Ubicación</h3>
+                        <p style="font-size: 14px; color: #5A4349;">Calle 16 de septiembre (En línea)</p>
+                    </div>
+                </div>
+
+                <div class="contacto-item">
+                    <img src="https://cdn-icons-png.flaticon.com/512/2838/2838838.png"
+                         alt="Icono de horario"
+                         style="filter: brightness(0) saturate(100%) invert(63%) sepia(19%) saturate(1000%) hue-rotate(290deg) brightness(95%) contrast(90%);">
+
+                    <div>
+                        <h3 style="font-size: 15px; color: #B87589; margin-bottom: 4px;">Horario de atención</h3>
+                        <p style="font-size: 14px; color: #5A4349;">Lunes a viernes: 9:00 a.m. - 6:00 p.m.</p>
+                    </div>
+                </div>
+
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <h3>Bienestar en equilibrio</h3>
+        <p>Pequeños hábitos, grandes cambios</p>
+        <p class="footer-frase">Cuerpo y mente, una misma esencia</p>
+    </footer>
+
+</body>
+</html>

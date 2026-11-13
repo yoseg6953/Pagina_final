@@ -1,0 +1,294 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividades físicas</title>
+    <link rel="stylesheet" href="estilos.css">
+
+    <style>
+        .encabezado-actividad {
+            text-align: center;
+            max-width: 850px;
+            margin: 35px auto;
+            padding: 20px;
+            color: #5A4349;
+        }
+
+        .encabezado-actividad h2 {
+            color: #B87589;
+            font-size: 30px;
+        }
+
+        .imagen-referencia-actividad {
+            display: block;
+            width: 80%;
+            max-width: 850px;
+            height: auto;
+            margin: 25px auto;
+            border-radius: 18px;
+        }
+
+        .titulo-actividades {
+            text-align: center;
+            color: #B87589;
+            margin: 40px 0 25px;
+        }
+
+        .grid-actividades {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+            margin: 30px auto;
+            max-width: 1150px;
+            padding: 15px;
+        }
+
+        .tarjeta-actividad {
+            background-color: #FFF0F3;
+            border-radius: 18px;
+            padding: 18px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.10);
+            transition: transform 0.3s;
+        }
+
+        .tarjeta-actividad:hover {
+            transform: translateY(-5px);
+        }
+
+        .tarjeta-actividad img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 13px;
+        }
+
+        .tarjeta-actividad h3 {
+            color: #B87589;
+            font-size: 21px;
+            margin: 15px 0;
+        }
+
+        .tarjeta-actividad p {
+            color: #5A4349;
+            line-height: 1.6;
+            min-height: 85px;
+        }
+
+        .boton-video {
+            display: inline-block;
+            background-color: #B87589;
+            color: white;
+            padding: 11px 20px;
+            border-radius: 25px;
+            text-decoration: none;
+            margin-top: 12px;
+            transition: 0.3s;
+        }
+
+        .boton-video:hover {
+            background-color: #92576B;
+        }
+
+        .aviso-video {
+            background-color: #F9E1E8;
+            color: #5A4349;
+            padding: 20px;
+            border-radius: 15px;
+            text-align: center;
+            max-width: 900px;
+            margin: 35px auto;
+            line-height: 1.6;
+        }
+
+        @media (max-width: 850px) {
+            .grid-actividades {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 550px) {
+            .grid-actividades {
+                grid-template-columns: 1fr;
+            }
+
+            .imagen-referencia-actividad {
+                width: 95%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo-titulo">
+        <img src="logoo.png" alt="Logo" class="logo">
+        <div class="texto-logo">
+            <h2>Bienestar en equilibrio</h2>
+            <p>CUERPO Y MENTE, UNA MISMA ESENCIA</p>
+        </div>
+    </div>
+
+    <nav>
+        <a href="index.html">Inicio</a>
+
+        <details class="menu-fisico">
+            <summary>Físico</summary>
+            <div class="desplegable-contenido">
+                <a href="fisico.html">General físico</a>
+                <a href="ejercicio.html">Ejercicio</a>
+                <a href="alimentacion.html">Alimentación</a>
+                <a href="descanso.html">Descanso</a>
+                <a href="hidratacion.html">Hidratación</a>
+                <a href="postura.html">Postura</a>
+            </div>
+        </details>
+
+        <a href="mental.html">Emocional</a>
+
+        <details class="menu-lineas">
+            <summary>Líneas del tiempo</summary>
+            <div class="desplegable-contenido">
+                <a href="bienestarfisico.html">Bienestar físico</a>
+                <a href="bienestarmental.html">Bienestar mental</a>
+            </div>
+        </details>
+
+        <details class="menu-actividades">
+            <summary>Actividades</summary>
+            <div class="desplegable-contenido">
+                <a href="actividadesfisicas.html">Físico</a>
+                <a href="actividadesemocionales.html">Emocional</a>
+            </div>
+        </details>
+
+        <a href="contacto.html">Contacto</a>
+    </nav>
+</header>
+
+<section class="portada">
+    <h1>Actividades para tu bienestar físico</h1>
+    <p>Encuentra una rutina que te ayude a mantenerte activo.</p>
+</section>
+
+<main>
+
+    <div class="encabezado-actividad">
+        <h2>¡Activa tu cuerpo!</h2>
+        <p>
+            Realizar actividad física ayuda a fortalecer los músculos,
+            mejorar la movilidad y mantener nuestro cuerpo saludable.
+            Elige una actividad y comienza a tu propio ritmo.
+        </p>
+    </div>
+
+
+    <h2 class="titulo-actividades">Elige tu actividad</h2>
+
+    <div class="grid-actividades">
+
+        <div class="tarjeta-actividad">
+            <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?w=600"
+                 alt="Persona realizando ejercicios de movilidad">
+            <h3>Movilidad</h3>
+            <p>
+                Movimientos suaves para mejorar la flexibilidad
+                y preparar las articulaciones antes de ejercitarte.
+            </p>
+            <a class="boton-video" target="_blank"
+               href="https://www.youtube.com/results?search_query=movilidad+articular+rutina+principiantes">
+               Ver video de ayuda
+            </a>
+        </div>
+
+        <div class="tarjeta-actividad">
+            <img src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=600"
+                 alt="Persona entrenando fuerza">
+            <h3>Fuerza</h3>
+            <p>
+                Ejercicios para fortalecer los músculos y desarrollar
+                resistencia utilizando tu propio peso o mancuernas.
+            </p>
+            <a class="boton-video" target="_blank"
+               href="https://www.youtube.com/results?search_query=entrenamiento+de+fuerza+principiantes+en+casa">
+               Ver video de ayuda
+            </a>
+        </div>
+
+        <div class="tarjeta-actividad">
+            <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600"
+                 alt="Persona haciendo ejercicio de cuerpo completo">
+            <h3>Cuerpo completo</h3>
+            <p>
+                Una rutina que trabaja diferentes grupos musculares
+                para mantener el cuerpo activo.
+            </p>
+            <a class="boton-video" target="_blank"
+               href="https://www.youtube.com/results?search_query=rutina+cuerpo+completo+principiantes">
+               Ver video de ayuda
+            </a>
+        </div>
+
+        <div class="tarjeta-actividad">
+            <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=600"
+                 alt="Persona realizando entrenamiento físico">
+            <h3>Power Sculpt</h3>
+            <p>
+                Ejercicios que combinan fuerza y control corporal
+                para trabajar distintos músculos.
+            </p>
+            <a class="boton-video" target="_blank"
+               href="https://www.youtube.com/results?search_query=power+sculpt+workout+principiantes">
+               Ver video de ayuda
+            </a>
+        </div>
+
+        <div class="tarjeta-actividad">
+            <img src="https://images.unsplash.com/photo-1599058917212-d750089bc07e?w=600"
+                 alt="Persona haciendo entrenamiento de bajo impacto">
+            <h3>HIIT de bajo impacto</h3>
+            <p>
+                Alterna periodos cortos de actividad con descansos.
+                Puedes comenzar con movimientos sencillos.
+            </p>
+            <a class="boton-video" target="_blank"
+               href="https://www.youtube.com/results?search_query=HIIT+bajo+impacto+principiantes">
+               Ver video de ayuda
+            </a>
+        </div>
+
+        <div class="tarjeta-actividad">
+            <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=600"
+                 alt="Persona realizando estiramientos">
+            <h3>Estiramientos</h3>
+            <p>
+                Movimientos controlados que ayudan a relajar
+                los músculos después de hacer ejercicio.
+            </p>
+            <a class="boton-video" target="_blank"
+               href="https://www.youtube.com/results?search_query=estiramientos+despues+de+hacer+ejercicio">
+               Ver video de ayuda
+            </a>
+        </div>
+
+    </div>
+
+    <div class="aviso-video">
+        <strong>Recomendación:</strong>
+        realiza calentamiento, toma agua y adapta los ejercicios
+        a tu condición física. Detente si sientes dolor o mareo.
+    </div>
+
+</main>
+
+<footer>
+    <h3>Bienestar en equilibrio</h3>
+    <p>Pequeños hábitos, grandes cambios</p>
+    <p class="footer-frase">Cuerpo y mente, una misma esencia</p>
+</footer>
+
+</body>
+</html>
